@@ -36,7 +36,14 @@
           label="I have read and agree to the Terms & Conditions"
         />
       </div>
-      <v-btn color="#2FBE76" block dark>Next</v-btn>
+      <button
+        v-ripple
+        class="agreenext"
+        :class="[agree ? '' : 'disablebtn']"
+        :disabled="!agree"
+      >
+        Next
+      </button>
     </div>
   </div>
 </template>

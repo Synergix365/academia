@@ -35,5 +35,21 @@
         color: #2FBE76;
       }
     }
+    .agreenext {
+      background-color: #2FBE76;
+      color: #FFF;
+      font-size: 12px;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      font-weight: 800;
+      outline: none;
+    }
+    .disablebtn {
+      background-color: #E0E0E0;
+      cursor: default;
+    }
   }
 }
