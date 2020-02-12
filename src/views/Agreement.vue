@@ -37,14 +37,17 @@
           label="I have read and agree to the Terms & Conditions"
         />
       </div>
+      <router-link to="/SignUp">
       <button
         v-ripple
         class="agreenext"
         :class="[agree ? '' : 'disablebtn']"
         :disabled="!agree"
+        to="/SignUp"
       >
         Next
       </button>
+      </router-link>
     </div>
   </div>
 </template>
