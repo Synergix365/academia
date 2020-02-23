@@ -1,14 +1,20 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Register from '../views/Register.vue';
+import Agreement from '../views/Agreement.vue';
+import SignUp from '../views/SignUp.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'register',
-    component: Register,
+    name: 'agreement',
+    component: Agreement,
+  },
+  {
+    path: '/signup',
+    name: 'signUp',
+    component: SignUp,
   },
 ];
 

@@ -4,6 +4,7 @@
     <div class="agreement">
       <img class="agreement-logo" src="@/assets/ecwpa_logo.png">
       <div class="agreement-desc">
+        <!--VARIABLES COMING SOON-->
         The Enrichment Center of Wester PA is a 501 (c)(3) non-
         profit corporation. We work to minimize our teaching and
         technical costs while maintaining quality, and we take
@@ -36,21 +37,24 @@
           label="I have read and agree to the Terms & Conditions"
         />
       </div>
+      <router-link to="/SignUp">
       <button
         v-ripple
         class="agreenext"
         :class="[agree ? '' : 'disablebtn']"
         :disabled="!agree"
+        to="/SignUp"
       >
         Next
       </button>
+      </router-link>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'register',
+  name: 'agreement',
 
   data: () => ({
     agree: false,
