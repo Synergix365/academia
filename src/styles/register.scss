@@ -46,10 +46,18 @@
       padding-bottom: 1em;
       font-weight: 800;
       outline: none;
+      width: 100%;
     }
     .disablebtn {
       background-color: #E0E0E0;
       cursor: default;
     }
   }
+}
+.register-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.register-body {
+  margin: 15px 0 15px 0;
 }

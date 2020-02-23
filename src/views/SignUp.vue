@@ -10,7 +10,7 @@
             </div>
 
             <!--Sign-Up Body-->
-            <div>
+            <div class="register-body">
                 <!--Account-->
                 <template v-if="currentPage === 0">
                     <Account />
@@ -33,9 +33,9 @@
             </div>
 
             <!--Buttons-->
-            <div>
-                <v-btn depressed color="primary" @Click="nextStep">Back</v-btn>
-                <v-btn depressed color="primary" @Click="backStep">Next</v-btn>
+            <div class="register-buttons">
+                <v-btn depressed color="primary" @click="backStep">Back</v-btn>
+                <v-btn depressed color="primary" @click="nextStep">Next</v-btn>
             </div>
         </div>
     </div>
@@ -61,13 +61,17 @@ export default {
     currentPage: 0,
   }),
   methods: {
+    // increments the user through the sign-up steps
     nextStep() {
-      this.currentPage += 1;
-      console.log(this.currentPage);
+      if (this.currentPage !== 3) {
+        this.currentPage += 1;
+      }
     },
+    // decrements the user through the sign-up steps
     backStep() {
-      this.currentPage -= 1;
-      console.log(this.currentPage);
+      if (this.currentPage !== 0) {
+        this.currentPage -= 1;
+      }
     },
   },
 };
