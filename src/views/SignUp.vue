@@ -34,8 +34,13 @@
 
             <!--Buttons-->
             <div class="register-buttons">
+              <template v-if="currentPage !== 0">
                 <v-btn depressed color="primary" @click="backStep">Back</v-btn>
-                <v-btn depressed color="primary" @click="nextStep">Next</v-btn>
+              </template>
+              <template v-if="currentPage === 0">
+                <v-btn depressed color="primary" to="/">Cancel Sign-Up</v-btn>
+              </template>
+              <v-btn depressed color="primary" @click="nextStep">Next</v-btn>
             </div>
         </div>
     </div>

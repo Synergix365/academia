@@ -12,7 +12,7 @@ const routes = [
     component: Agreement,
   },
   {
-    path: '/SignUp',
+    path: '/signup',
     name: 'signUp',
     component: SignUp,
   },

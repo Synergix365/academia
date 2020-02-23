@@ -1,7 +1,7 @@
 <template>
     <div class="account-body">
 
-      <!--<make this cleaner-->
+    <!--<make this cleaner-->
       <v-text-field
         class="account-inputs"
         placeholder="First Name"
@@ -37,7 +37,7 @@
         persistent-hint
         outlined
       />
-    </div>
+      </div>
 </template>
 
 <script>
