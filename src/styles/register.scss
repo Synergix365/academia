@@ -1,7 +1,8 @@
-.register {
+.agreement {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   .backimg {
     position: absolute;
     left: 0;
@@ -10,10 +11,10 @@
     height: 100vh;
     opacity: .5;
   }
-  .agreement {
-    margin-top: 1em;
+  .agreement-box {
     display: flex;
     flex-direction: column;
+    align-self: center;
     font-size: 12px;
     width: 470px;
     background-color: white;
@@ -64,4 +65,9 @@
 
 .asterisk {
   color: red;
+}
+
+.v-text-field--filled > .v-input__control > .v-input__slot, .v-text-field--full-width > .v-input__control > .v-input__slot, .v-text-field--outlined > .v-input__control > .v-input__slot {
+  min-height: 42px;
+  font-size: 14px;
 }

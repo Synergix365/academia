@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Agreement from '../views/Agreement.vue';
-import SignUp from '../views/SignUp.vue';
+import Register from '../views/Register.vue';
 
 Vue.use(VueRouter);
 
@@ -12,9 +12,9 @@ const routes = [
     component: Agreement,
   },
   {
-    path: '/signup',
-    name: 'signUp',
-    component: SignUp,
+    path: '/register',
+    name: 'register',
+    component: Register,
   },
 ];
 
