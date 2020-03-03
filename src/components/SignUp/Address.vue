@@ -17,28 +17,23 @@
         /><span class="asterisk colorless">*</span>
       </div>
       <!--Change: DropDown-->
-      <div class="account-field">
-        <v-text-field
-          placeholder="State"
-          outlined
-        /><span class="asterisk">*</span>
-      </div>
-      <div class="account-field">
-        <v-text-field
-          placeholder="City"
-          hint="ex: Jackson"
-          persistent-hint
-          outlined
-        /><span class="asterisk">*</span>
-      </div>
-      <div class="account-field">
-        <v-text-field
-          placeholder="Zip Code"
-          hint="ex: 50611"
-          persistent-hint
-          outlined
-        /><span class="asterisk">*</span>
-      </div>
+      <v-text-field
+        placeholder="State"
+        outlined
+      />
+      <v-text-field
+        placeholder="City"
+        hint="ex: Jackson"
+        persistent-hint
+        outlined
+      />
+      <v-text-field
+        placeholder="Zip Code"
+        v-mask="mask"
+        hint="ex: 50611"
+        persistent-hint
+        outlined
+      />
       <!--Change: DropDown-->
       <div class="account-field">
         <v-text-field
@@ -50,8 +45,16 @@
 </template>
 
 <script>
+import { mask } from 'vue-the-mask';
+
 export default {
   name: 'Address',
+  directives: {
+    mask,
+  },
+  data: () => ({
+    mask: '#####',
+  }),
 };
 </script>
 
