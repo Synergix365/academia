@@ -2,6 +2,7 @@
     <div>
       <v-text-field
         placeholder="PhoneNumber"
+        v-mask="mask"
         hint="ex: (412) 555-5555"
         persistent-hint
         outlined
@@ -30,8 +31,16 @@
 </template>
 
 <script>
+import { mask } from 'vue-the-mask';
+
 export default {
   name: 'Profile',
+  directives: {
+    mask,
+  },
+  data: () => ({
+    mask: '(###) ###-####',
+  }),
 };
 </script>
 
