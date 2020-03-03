@@ -13,20 +13,26 @@
         outlined
       />
       <!--Change: DropDown-->
-      <v-text-field
-        placeholder="Gender"
-        outlined
-      />
+      <div class="account-field">
+        <v-text-field
+          placeholder="Gender"
+          outlined
+        /><span class="asterisk">*</span>
+      </div>
       <!--Change: DropDown-->
-      <v-text-field
-        placeholder="Marital Status"
-        outlined
-      />
+      <div class="account-field">
+        <v-text-field
+          placeholder="Marital Status"
+          outlined
+        /><span class="asterisk">*</span>
+      </div>
       <!--Change: DropDown-->
-      <v-text-field
-        placeholder="Date of Birth"
-        outlined
-      />
+      <div class="account-field">
+        <v-text-field
+          placeholder="Date of Birth"
+          outlined
+        /><span class="asterisk">*</span>
+      </div>
     </div>
 </template>
 
