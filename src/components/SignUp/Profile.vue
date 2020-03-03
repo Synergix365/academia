@@ -1,31 +1,43 @@
 <template>
-    <div>
-      <v-text-field
-        placeholder="PhoneNumber"
-        hint="ex: (412) 555-5555"
-        persistent-hint
-        outlined
-      />
-      <!--Change: DropDown and allign with phone number-->
-      <v-text-field
-        placeholder="PhoneType"
-        outlined
-      />
+    <div class="account-body">
+      <div class="account-field">
+        <div class="account-field">
+          <v-text-field
+            placeholder="Phone Number"
+            hint="ex: (412) 555-5555"
+            persistent-hint
+            outlined
+          /><span class="asterisk">*</span>
+        </div>
+        <!--Change: DropDown and allign with phone number-->
+        <div class="account-field shift-right">
+          <v-text-field
+            placeholder="Phone Type"
+            outlined
+          /><span class="asterisk">*</span>
+        </div>
+      </div>
       <!--Change: DropDown-->
-      <v-text-field
-        placeholder="Gender"
-        outlined
-      />
+      <div class="account-field">
+        <v-text-field
+          placeholder="Gender"
+          outlined
+        /><span class="asterisk">*</span>
+      </div>
       <!--Change: DropDown-->
-      <v-text-field
-        placeholder="Marital Status"
-        outlined
-      />
+      <div class="account-field">
+        <v-text-field
+          placeholder="Marital Status"
+          outlined
+        /><span class="asterisk">*</span>
+      </div>
       <!--Change: DropDown-->
-      <v-text-field
-        placeholder="Date of Birth"
-        outlined
-      />
+      <div class="account-field">
+        <v-text-field
+          placeholder="Date of Birth"
+          outlined
+        /><span class="asterisk">*</span>
+      </div>
     </div>
 </template>
 

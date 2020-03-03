@@ -1,8 +1,20 @@
 
 .account-body {
-    display: flexbox;
-    justify-content: space-between;
-}
-.account-item {
-    display: block;
+  display: flex;
+  flex-direction: column;
+  .account-field {
+    display: flex;
+    margin-bottom: 1em;
+    .asterisk {
+      margin-top: 1em;
+      margin-left: 1em;
+      color: red;
+    }
+    .colorless {
+      color: #FFF;
+    }
+  }
+  .shift-right {
+    margin-left: 2em;
+  }
 }

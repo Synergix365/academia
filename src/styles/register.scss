@@ -63,11 +63,10 @@
   margin: 15px 0 15px 0;
 }
 
-.asterisk {
-  color: red;
-}
-
 .v-text-field--filled > .v-input__control > .v-input__slot, .v-text-field--full-width > .v-input__control > .v-input__slot, .v-text-field--outlined > .v-input__control > .v-input__slot {
   min-height: 42px;
   font-size: 14px;
+}
+.v-messages__message {
+  color: #2FBE76;
 }
