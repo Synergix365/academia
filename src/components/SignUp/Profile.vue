@@ -1,17 +1,22 @@
 <template>
-    <div>
-      <v-text-field
-        placeholder="PhoneNumber"
-        v-mask="mask"
-        hint="ex: (412) 555-5555"
-        persistent-hint
-        outlined
-      />
-      <!--Change: DropDown and allign with phone number-->
-      <v-text-field
-        placeholder="PhoneType"
-        outlined
-      />
+    <div class="account-body">
+      <div class="account-field">
+        <div class="account-field">
+          <v-text-field
+            placeholder="Phone Number"
+            hint="ex: (412) 555-5555"
+            persistent-hint
+            outlined
+          /><span class="asterisk">*</span>
+        </div>
+        <!--Change: DropDown and allign with phone number-->
+        <div class="account-field shift-right">
+          <v-text-field
+            placeholder="Phone Type"
+            outlined
+          /><span class="asterisk">*</span>
+        </div>
+      </div>
       <!--Change: DropDown-->
       <div class="account-field">
         <v-text-field
@@ -37,16 +42,8 @@
 </template>
 
 <script>
-import { mask } from 'vue-the-mask';
-
 export default {
   name: 'Profile',
-  directives: {
-    mask,
-  },
-  data: () => ({
-    mask: '(###) ###-####',
-  }),
 };
 </script>
 
