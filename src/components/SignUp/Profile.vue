@@ -5,6 +5,7 @@
           <v-text-field
             placeholder="Phone Number"
             hint="ex: (412) 555-5555"
+            v-mask="phoneNumberMask"
             persistent-hint
             outlined
           /><span class="asterisk">*</span>
@@ -38,6 +39,7 @@
       <div class="account-field">
         <v-text-field
           placeholder="Date of Birth"
+          v-mask="dateOfBirthMask"
           outlined
         /><span class="asterisk">*</span>
       </div>
@@ -45,12 +47,19 @@
 </template>
 
 <script>
+import { mask } from 'vue-the-mask';
+
 export default {
   name: 'Profile',
+  directives: {
+    mask,
+  },
   data: () => ({
     phoneType: ['Mobile', 'Home', 'Work'],
     gender: ['Female', 'Male'],
     maritalStatus: ['Married', 'Single', 'Divorced', 'Widowed'],
+    phoneNumberMask: '(###) ###-####',
+    dateOfBirthMask: '##/##/####',
   }),
 };
 </script>
