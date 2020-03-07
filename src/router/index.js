@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
+    path: '/agreement',
     name: 'agreement',
     component: Agreement,
   },
@@ -18,7 +18,7 @@ const routes = [
     component: Register,
   },
   {
-    path: '/login',
+    path: '/',
     name: 'login',
     component: Login,
   },

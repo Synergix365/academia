@@ -3,7 +3,7 @@
   <img class="backimg" src="@/assets/envatoelements-background.jpg">
     <div class="agreement-box">
       <img class="agreement-logo" src="@/assets/ecwpa_logo.png">
-      <div class="agreement-desc">
+      <div class="login-desc">
         Please login to continue.
       </div>
 
@@ -31,7 +31,9 @@
       <div class=login-links>
         <div class=login-links-group>
           <v-btn text small color="primary">Forgot Password</v-btn>
-          <v-btn text small color="primary">Sign Up</v-btn>
+          <router-link to="/agreement">
+            <v-btn text small color="primary">Sign Up</v-btn>
+          </router-link>
         </div>
           <v-btn text small color="primary">Unlock Account</v-btn>
         <!-- <v-btn text small color="primary">Request Validation Email</v-btn> -->
