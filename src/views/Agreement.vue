@@ -62,5 +62,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/register.scss";
+  @import "@/styles/register.scss";
 </style>

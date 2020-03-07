@@ -1,6 +1,45 @@
 <template>
-    <div>
+  <div class="agreement">
+  <img class="backimg" src="@/assets/envatoelements-background.jpg">
+    <div class="agreement-box">
+      <img class="agreement-logo" src="@/assets/ecwpa_logo.png">
+      <div class="agreement-desc">
+        Please login to continue.
+      </div>
+
+      <div class="login-field">
+        <v-text-field
+          label="Email Address"
+          placeholder="JohnDoe@gmail.com"
+        />
+      </div>
+
+      <div class="login-field">
+        <v-text-field
+          label="Password"
+          placeholder="JohnDont123!!"
+        />
+      </div>
+      <!-- login button -->
+      <button
+        v-ripple
+        class="login-button"
+      >
+        Login
+      </button>
+
+      <div class=login-links>
+        <div class=login-links-group>
+          <v-btn text small color="primary">Forgot Password</v-btn>
+          <v-btn text small color="primary">Sign Up</v-btn>
+        </div>
+          <v-btn text small color="primary">Unlock Account</v-btn>
+        <!-- <v-btn text small color="primary">Request Validation Email</v-btn> -->
+      </div>
     </div>
+
+
+  </div>
 </template>
 
 <script>
@@ -9,6 +48,6 @@ export default {
 };
 </script>
 
-<style>
-
+<style lang="scss">
+  @import "@/styles/login.scss";
 </style>

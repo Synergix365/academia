@@ -1,0 +1,33 @@
+.login-field {
+    margin-top: 2.5em;
+}
+.login-label{
+    margin-bottom: -80px;
+}
+.login-button {
+    background-color: #2FBE76;
+    color: #FFF;
+    font-size: 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    font-weight: 800;
+    outline: none;
+    width: 100%;
+    margin-top: 1em;
+  }
+  .disablebtn {
+    background-color: #E0E0E0;
+    cursor: default;
+  }
+  .login-links {
+      display: block;
+  }
+  .login-links-group {
+      margin-top: .5em;
+      display: flex;
+      justify-content: space-between;
+  }
