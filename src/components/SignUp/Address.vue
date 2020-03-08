@@ -19,9 +19,9 @@
       <!--Change: DropDown-->
       <div class="account-field">
         <v-autocomplete
-        :items="states"
-        placeholder="State"
-        outlined
+          :items="states"
+          placeholder="State"
+          outlined
         /><span class="asterisk">*</span>
       </div>
       <div class="account-field">
@@ -44,9 +44,9 @@
       <!--Change: DropDown-->
       <div class="account-field">
         <v-autocomplete
-        :items="countries"
-        placeholder="Countries"
-        outlined
+          :items="countries"
+          placeholder="Countries"
+          outlined
         /><span class="asterisk">*</span>
       </div>
     </div>
