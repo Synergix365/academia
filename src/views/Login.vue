@@ -17,7 +17,6 @@
       <div class="login-field">
         <v-text-field
           label="Password"
-          placeholder="JohnDont123!!"
         />
       </div>
       <!-- login button -->
