@@ -3,6 +3,7 @@
       <div class="account-field">
         <div class="account-field">
           <v-text-field
+            :rules="requiredPhoneNumber"
             placeholder="Phone Number"
             hint="ex: (412) 555-5555"
             v-mask="phoneNumberMask"
@@ -60,6 +61,17 @@ export default {
     maritalStatus: ['Married', 'Single', 'Divorced', 'Widowed'],
     phoneNumberMask: '(###) ###-####',
     dateOfBirthMask: '##/##/####',
+
+    // required phone number
+    requiredPhoneNumber: [
+      v => !!v || 'Phone number is required',
+      v => (v && v.length >= 14) || 'Please enter a 10-digit phone number.',
+    ],
+
+    // optional phone number
+    optionalPhoneNumber: [
+      v => (v && v.length >= 14) || /^$/.test(v) || 'Please enter a 10-digit phone number.',
+    ],
   }),
 };
 </script>
