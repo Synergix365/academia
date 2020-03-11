@@ -33,6 +33,7 @@
       <div class="agreebox">
         <v-checkbox
           v-model="agree"
+          color="#2FBE76"
           label="I have read and agree to the Terms & Conditions"
         />
       </div>
