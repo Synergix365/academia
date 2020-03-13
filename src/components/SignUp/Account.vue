@@ -33,6 +33,7 @@
       <div class="account-field">
         <v-text-field
           class="account-inputs"
+          :rules="passwordRules"
           placeholder="Password"
           hint="ex: ABCabc123"
           persistent-hint
@@ -77,6 +78,15 @@ export default {
       v => /^[a-zA-Z\s-,/\\.']+$/.test(v) || 'Only enter letters, spaces, slashes, dashes, periods, or commas',
       v => /[a-zA-Z]/.test(v) || 'Last name must contain at least one letter',
       v => /^\S+(?: \s+)*$/.test(v) || 'Last name cannot start/end with a space or contain a double space',
+    ],
+
+    // password
+    passwordRules: [
+      v => !!v || 'Password is required',
+      v => (v && v.length >= 5) || 'Password must have 5+ characters',
+      v => /(?=.*[A-Z])/.test(v) || 'Must have one uppercase character',
+      v => /(?=.*\d)/.test(v) || 'Must have one number',
+      v => /([!@$%])/.test(v) || 'Must have one special character [!@#$%]',
     ],
   }),
 };
