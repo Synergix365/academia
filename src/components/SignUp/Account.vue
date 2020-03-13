@@ -7,6 +7,7 @@
           placeholder="First Name"
           hint="ex: John"
           persistent-hint
+          required
           outlined
         /><span class="asterisk">*</span>
       </div>
@@ -17,6 +18,7 @@
           placeholder="Last Name"
           hint="ex: Smith"
           persistent-hint
+          required
           outlined
         /><span class="asterisk">*</span>
       </div>
@@ -27,25 +29,31 @@
           placeholder="Email Address"
           hint="ex: JohnSmith@gmail.com"
           persistent-hint
+          required
           outlined
         /><span class="asterisk">*</span>
       </div>
       <div class="account-field">
         <v-text-field
           class="account-inputs"
+          v-model="userPassword"
           :rules="passwordRules"
           placeholder="Password"
           hint="ex: ABCabc123"
           persistent-hint
+          required
           outlined
         /><span class="asterisk">*</span>
       </div>
       <div class="account-field">
         <v-text-field
           class="account-inputs"
+          v-model="confirmUserPassword"
+          :rules="confirmPasswordRules"
           placeholder="Confirm Password"
           hint="ex: ABCabc123"
           persistent-hint
+          required
           outlined
         /><span class="asterisk">*</span>
       </div>
@@ -88,6 +96,14 @@ export default {
       v => /(?=.*\d)/.test(v) || 'Must have one number',
       v => /([!@$%])/.test(v) || 'Must have one special character [!@#$%]',
     ],
+
+    // confirm password
+    confirmPasswordRules: [
+      v => !!v || 'Password is required',
+    ],
+
+    userPassword: '',
+    confirmUserPassword: '',
   }),
 };
 </script>
