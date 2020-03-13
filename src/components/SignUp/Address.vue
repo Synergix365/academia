@@ -19,7 +19,7 @@
         /><span class="asterisk colorless">*</span>
       </div>
       <!--Change: DropDown-->
-      <div class="account-field">
+      <div class="account-field account-dropdown">
         <v-autocomplete
           :rules="stateRules"
           :items="states"
@@ -50,7 +50,7 @@
         /><span class="asterisk">*</span>
       </div>
       <!--Change: DropDown-->
-      <div class="account-field">
+      <div class="account-field account-dropdown">
         <v-autocomplete
           :rules="countryRules"
           :items="countries"

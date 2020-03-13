@@ -24,7 +24,7 @@
         </div>
       </div>
       <!--Change: DropDown-->
-      <div class="account-field">
+      <div class="account-field account-dropdown">
         <v-autocomplete
           :rules="genderRules"
           :items="gender"
@@ -34,7 +34,7 @@
         /><span class="asterisk">*</span>
       </div>
       <!--Change: DropDown-->
-      <div class="account-field">
+      <div class="account-field account-dropdown">
         <v-autocomplete
           :rules="maritalStatusRules"
           :items="maritalStatus"
@@ -44,7 +44,7 @@
         /><span class="asterisk">*</span>
       </div>
       <!--Change: DropDown-->
-      <div class="account-field">
+      <div class="account-field account-dropdown">
         <v-text-field
           :rules="dateOfBirthRules"
           placeholder="Date of Birth"
@@ -101,5 +101,4 @@ export default {
 </script>
 
 <style>
-
 </style>
