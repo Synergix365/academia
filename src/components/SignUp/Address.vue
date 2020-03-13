@@ -18,7 +18,7 @@
           outlined
         /><span class="asterisk colorless">*</span>
       </div>
-      <!--Change: DropDown-->
+
       <div class="account-field account-dropdown">
         <v-autocomplete
           :rules="stateRules"
@@ -49,7 +49,7 @@
           outlined
         /><span class="asterisk">*</span>
       </div>
-      <!--Change: DropDown-->
+
       <div class="account-field account-dropdown">
         <v-autocomplete
           :rules="countryRules"

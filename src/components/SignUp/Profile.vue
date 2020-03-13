@@ -23,7 +23,7 @@
           /><span class="asterisk">*</span>
         </div>
       </div>
-      <!--Change: DropDown-->
+
       <div class="account-field account-dropdown">
         <v-autocomplete
           :rules="genderRules"
@@ -33,7 +33,7 @@
           outlined
         /><span class="asterisk">*</span>
       </div>
-      <!--Change: DropDown-->
+
       <div class="account-field account-dropdown">
         <v-autocomplete
           :rules="maritalStatusRules"
@@ -43,7 +43,7 @@
           outlined
         /><span class="asterisk">*</span>
       </div>
-      <!--Change: DropDown-->
+
       <div class="account-field account-dropdown">
         <v-text-field
           :rules="dateOfBirthRules"
