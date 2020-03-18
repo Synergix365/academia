@@ -1,4 +1,3 @@
-
 .account-body {
   display: flex;
   flex-direction: column;
@@ -13,6 +12,9 @@
     .colorless {
       color: #FFF;
     }
+  }
+  .account-dropdown {
+    margin-bottom: -0.55em;
   }
   .shift-right {
     margin-left: 2em;

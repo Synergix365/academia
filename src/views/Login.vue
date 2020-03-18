@@ -17,6 +17,7 @@
       <div class="login-field">
         <v-text-field
           label="Password"
+          type="password"
         />
       </div>
       <!-- login button -->
