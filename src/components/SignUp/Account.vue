@@ -2,7 +2,6 @@
     <div class="account-body">
       <div class="account-field">
         <v-text-field
-          class="account-inputs"
           :rules="firstNameRules"
           placeholder="First Name"
           hint="ex: John"
@@ -13,7 +12,6 @@
       </div>
       <div class="account-field">
         <v-text-field
-          class="account-inputs"
           :rules="lastNameRules"
           placeholder="Last Name"
           hint="ex: Smith"
@@ -24,7 +22,6 @@
       </div>
       <div class="account-field">
         <v-text-field
-          class="account-inputs"
           :rules="emailRules"
           placeholder="Email Address"
           hint="ex: JohnSmith@gmail.com"
@@ -35,7 +32,6 @@
       </div>
       <div class="account-field">
         <v-text-field
-          class="account-inputs"
           v-model="userPassword"
           :rules="passwordRules"
           placeholder="Password"
@@ -47,7 +43,6 @@
       </div>
       <div class="account-field">
         <v-text-field
-          class="account-inputs"
           v-model="confirmUserPassword"
           :rules="confirmPasswordRules"
           placeholder="Confirm Password"
