@@ -1,8 +1,8 @@
 <template>
     <div class="account-body">
       <div class="account-field">
-        <div class="account-field">
           <v-text-field
+            class="width-prop"
             :rules="requiredPhoneNumber"
             placeholder="Phone Number"
             hint="ex: (412) 555-5555"
@@ -11,17 +11,15 @@
             required
             outlined
           /><span class="asterisk">*</span>
-        </div>
         <!--Change: DropDown and allign with phone number-->
-        <div class="account-field shift-right">
           <v-autocomplete
+            class="shift-right"
             :rules="phoneTypeRules"
             :items="phoneType"
             placeholder="Phone Type"
             required
             outlined
           /><span class="asterisk">*</span>
-        </div>
       </div>
 
       <div class="account-field account-dropdown">
