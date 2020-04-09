@@ -10,7 +10,6 @@
       <div class="login-field">
         <v-text-field
           label="Email Address"
-          placeholder="JohnDoe@gmail.com"
         />
       </div>
 

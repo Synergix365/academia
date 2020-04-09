@@ -38,6 +38,7 @@
           class="account-inputs"
           v-model="userPassword"
           :rules="passwordRules"
+          type="password"
           placeholder="Password"
           hint="ex: ABCabc123"
           persistent-hint
@@ -46,10 +47,12 @@
         /><span class="asterisk">*</span>
       </div>
       <div class="account-field">
+        <!--There needs to be a function that checks if this field matches the other one-->
         <v-text-field
           class="account-inputs"
           v-model="confirmUserPassword"
           :rules="confirmPasswordRules"
+          type="password"
           placeholder="Confirm Password"
           hint="ex: ABCabc123"
           persistent-hint
