@@ -3,6 +3,55 @@
     <img class="backimg" src="@/assets/envatoelements-background.jpg">
     <div class="agreement-box">
       <img class="agreement-logo" src="@/assets/ecwpa_logo.png">
+      <div class="stepper-container">
+        <div
+          :class="[
+            currentPage === 0 ? 'step-boxes'
+            : stepProgress > 0 ? 'faded-boxes'
+            : 'disabled-boxes'
+          ]"
+          @click="stepperChange(0)"
+          v-ripple
+        >
+          Account
+        </div>
+        <v-divider></v-divider>
+        <div
+          :class="[
+            currentPage === 1? 'step-boxes'
+            : stepProgress > 1 ? 'faded-boxes'
+            : 'disabled-boxes'
+        ]"
+          @click="stepperChange(1)"
+          v-ripple
+        >
+          Address
+        </div>
+        <v-divider></v-divider>
+        <div
+          :class="[
+            currentPage === 2? 'step-boxes'
+            : stepProgress > 2 ? 'faded-boxes'
+            : 'disabled-boxes'
+          ]"
+          @click="stepperChange(2)"
+          v-ripple
+        >
+          Profile
+        </div>
+        <v-divider></v-divider>
+        <div
+          :class="[
+            currentPage === 3? 'step-boxes'
+            : stepProgress > 3 ? 'faded-boxes'
+            : 'disabled-boxes'
+          ]"
+          @click="stepperChange(3)"
+          v-ripple
+        >
+          Confirm
+        </div>
+      </div>
       <div class="agreement-desc">
         Please enter account information below and press the "Next"
         button when complete. Note, all required fields are marked
@@ -64,18 +113,27 @@ export default {
   },
   data: () => ({
     currentPage: 0,
+    stepProgress: 1,
   }),
   methods: {
     // increments the user through the sign-up steps
     nextStep() {
       if (this.currentPage !== 3) {
         this.currentPage += 1;
+        if (this.stepProgress <= this.currentPage) {
+          this.stepProgress += 1;
+        }
       }
     },
     // decrements the user through the sign-up steps
     backStep() {
       if (this.currentPage !== 0) {
         this.currentPage -= 1;
+      }
+    },
+    stepperChange(currentPage) {
+      if (this.stepProgress > currentPage) {
+        this.currentPage = currentPage;
       }
     },
   },
