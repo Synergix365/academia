@@ -16,7 +16,7 @@
     flex-direction: column;
     align-self: center;
     font-size: 12px;
-    width: 470px;
+    width: 550px;
     background-color: white;
     color: black;
     z-index: 1;
@@ -24,7 +24,38 @@
     padding: 3em 6em;
     .agreement-logo {
       width: 75%;
-      margin-bottom: 1em;
+      margin-bottom: 2em;
+      align-self: center;
+    }
+    .stepper-container {
+      display: flex;
+      hr {
+        transform: translateY(1.25em);
+      }
+      .step-boxes {
+        color: #FFF !important;
+        background-color: #2FBE76;
+        border: none;
+        border-radius: 7px;
+        padding: .5em 1.75em;
+        cursor: pointer;
+      }
+      .faded-boxes {
+        opacity: .5;
+        color: #FFF !important;
+        background-color: #2FBE76;
+        border: none;
+        border-radius: 7px;
+        padding: .5em 1.75em;
+        cursor: pointer;
+      }
+      .disabled-boxes {
+        color: #FFF !important;
+        background-color: #E0E0E0;
+        border: none;
+        border-radius: 7px;
+        padding: .5em 1.75em;
+      }
     }
     .agreement-desc {
       margin-top: 1em;
@@ -34,6 +65,7 @@
       .v-input--selection-controls .v-input__slot > .v-label, .v-input--selection-controls .v-radio > .v-label {
         font-size: 12px;
         color: #2FBE76;
+        margin-bottom: 1em;
       }
     }
     .agreenext {
@@ -61,6 +93,8 @@
 }
 .register-body {
   margin: 15px 0 15px 0;
+  width: 350px;
+  align-self: center;
 }
 
 .v-text-field--filled > .v-input__control > .v-input__slot, .v-text-field--full-width > .v-input__control > .v-input__slot, .v-text-field--outlined > .v-input__control > .v-input__slot {
